@@ -1,0 +1,116 @@
+.Products {
+  width: 100%;
+  padding: 0 10%;
+  h1 {
+    font-family: 'Work Sans 600';
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #101828;
+    max-width: 477px;
+    margin: 0 auto 60px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 30px;
+    .card {
+      padding: 20px;
+      border: 1px #e4e7ec solid;
+      border-radius: 6px;
+      position: relative;
+      min-height: 375px;
+      h5 {
+        font-family: 'Work Sans 400';
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #576071;
+        margin-bottom: 4px;
+      }
+      .stars {
+        display: flex;
+        align-items: center;
+        column-gap: 1px;
+        margin-bottom: 17px;
+      }
+      h2 {
+        font-family: 'Work Sans 600';
+        font-size: 16px;
+        padding-right: 20px;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #323a4b;
+        margin-bottom: 9px;
+      }
+      .buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-family: 'Work Sans 600';
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #006d77;
+        }
+        a {
+          font-family: 'Work Sans 500';
+          font-size: 12px;
+          padding: 5px 15px;
+          border-radius: 6px;
+          background-color: #BEE1E6;
+          color: #006D77;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+      h4 {
+        font-family: 'Work Sans 400';
+        font-size: 10px;
+        padding: 0px 10px;
+        border-radius: 25px;
+        background-color: #101828;
+        color: #ffffff;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        position: absolute;
+        top: 21px;
+        left: 15px;
+      }
+      .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        img {
+          width: 80%;
+          height: 150px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Products h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Products h1{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .Products .cards{
+    grid-template-columns: 1fr;
+  }
+}

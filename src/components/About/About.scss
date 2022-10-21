@@ -1,0 +1,51 @@
+.About {
+  width: 100%;
+  padding: 100px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  gap: 30px;
+  align-items: center;
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    border: 1px solid #E4E7EC;
+    height: 125px;
+    border-radius: 6px;
+    h2 {
+      font-family: 'Work Sans 600';
+      font-size: 15px;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 7px;
+      color: #323a4b;
+    }
+    h4 {
+      font-family: 'Work Sans 300';
+      font-size: 15px;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #101828;
+    }
+    img {
+      width: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .About{
+    padding: 100px 5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .About {
+    grid-template-columns: 1fr;
+    .card{
+      height: 150px;
+    }
+  }
+}

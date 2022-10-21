@@ -1,0 +1,118 @@
+.NewsLetter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 10%;
+  .container {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #006d77;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    gap: 30px;
+    padding: 58px 45px 0;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+    .img {
+      width: 400px;
+      margin-bottom: -50px;
+    }
+    h2 {
+      font-family: 'Work Sans 500';
+      font-size: 40px;
+      margin-bottom: 10px;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+      font-weight: 500;
+    }
+    p {
+      max-width: 485px;
+      font-family: Merriweather;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 360px;
+      height: 59px;
+      position: relative;
+      input {
+        width: 100%;
+        height: 100%;
+        border-radius: 53px;
+        background-color: white;
+        border: none;
+        padding: 20px 28px;
+        font-family: 'Work Sans 400';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        &:focus{
+          outline: none;
+        }
+      }
+      button {
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #006d77;
+        width: 42px;
+        height: 42px;
+        top: 8px;
+        right: 8px;
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .NewsLetter{
+    padding: 120px 5%;
+    h2{
+      font-size: 35px;
+      line-height: 45px;
+    }
+    p{
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .NewsLetter .container{
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 58px 45px;
+    .img{
+      margin-bottom: 50px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .NewsLetter{
+    .container{
+      padding: 20px;
+      h2{
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .img{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
